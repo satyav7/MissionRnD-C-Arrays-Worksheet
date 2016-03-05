@@ -12,8 +12,6 @@ NOTES:
 */
 
 #include <stdio.h>
-#include<stdlib.h>
-
 void * sortedArrayPositionsChange(int *Arr, int len)
 {
 	
