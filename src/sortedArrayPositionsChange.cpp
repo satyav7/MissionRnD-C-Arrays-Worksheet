@@ -12,8 +12,27 @@ NOTES:
 */
 
 #include <stdio.h>
+#include<stdlib.h>
 
 void * sortedArrayPositionsChange(int *Arr, int len)
 {
-	return NULL;
+	
+	if (Arr == NULL || len <= 0)
+		return NULL;
+	int temp = 0, count = 0, i;
+	for (i = 1; i < len; i++) {
+		if (Arr[i - 1] > Arr[i]){
+		if (count == 0){
+				temp = i - 1;
+				count++;
+			}
+			else
+				break;
+		}
+	}
+	if (count == 1){
+		Arr[temp] = Arr[temp] + Arr[i];
+		Arr[i] = Arr[temp] - Arr[i];
+		Arr[temp] = Arr[temp] - Arr[i];
+	}
 }

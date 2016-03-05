@@ -2,7 +2,15 @@
 #include <stdio.h>
 
 int main(){
+	int arr[11] = {1,2,2,3,3,4,4,5,5,5,2};
+	int len,i;
 
+
+	len=removeArrayDuplicates(arr, 11);
+	
+	for (i = 0; i < len; i++)
+		printf("%d", arr[i]);
+	printf("\n");
 	//Test RemoveArraysDuplicates
 	/*
 	int arr[3] = { 1, 2, 7 };
@@ -16,7 +24,5 @@ int main(){
 	int *newarray=sortedArrayInsertNumber(arr, 3, 3);
 	printf("%d %d %d %d", newarray[0], newarray[1], newarray[2],newarray[3]);
 	*/
-
-
-	return 0;
+	
 }
