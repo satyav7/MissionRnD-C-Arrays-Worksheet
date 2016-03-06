@@ -1,6 +1,7 @@
 #include "FunctionHeadersArrays1.h"
 #include <stdio.h>
 
+
 int main(){
 
 	//Test RemoveArraysDuplicates
@@ -10,7 +11,7 @@ int main(){
 	printf("%d", len);
 	*/
 
-	//Test Students Count
+	//Test Students Count2
 	/*
 	int arr2[3]={1,4,10};
 	int *newarray=sortedArrayInsertNumber(arr, 3, 3);
